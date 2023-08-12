@@ -2,14 +2,14 @@ import React, { useState } from 'react';
 import useDebounce from './useDebounce';
 
 export default function DebounceComponent() {
-  const [count, setCount] = useState(10);
-  useDebounce(() => alert(count), 1000, [count]);
+  const [text, setText] = useState('AAA');
+  useDebounce(() => alert(text), 1000, [text]);
 
   return (
     <div className="section">
       <h2>useDebounce</h2>
-      <div>{count}</div>
-      <button onClick={() => setCount((c) => c + 1)}>Increment</button>
+      <div>{text}</div>
+      <input autoFocus onChange={(e) => setText(e.target.value)}/>
     </div>
   );
 }
