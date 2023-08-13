@@ -6,6 +6,8 @@ import TimeoutComponent from './hooks/TimeoutComponent';
 import DebounceComponent from './hooks/DebounceComponent';
 import UpdateEffectComponent from './hooks/UpdateEffectComponent';
 import PreviousComponent from './hooks/PreviousComponent';
+import StateWithHistoryComponent from './hooks/StateWithHistoryComponent';
+
 
 function App() {
   return (
@@ -14,7 +16,8 @@ function App() {
       {/* <TimeoutComponent /> */}
       {/* <DebounceComponent /> */}
       {/* <UpdateEffectComponent /> */}
-      <PreviousComponent />
+      {/* <PreviousComponent /> */}
+      <StateWithHistoryComponent />
     </>
   );
 }
